@@ -30,20 +30,23 @@ This project implements a Deep Ensemble-based Efficient Framework for detecting 
      <td><img width="397" alt="image" src="https://github.com/user-attachments/assets/885ec7d9-f061-488f-97e4-59be7a855a0a"></td>
    </tr>
 </table>
+
 ---
 
 ## Installation
 #### Use Anaconda Navigator as base root
 To install and run this project, follow these steps:
-1. **Clone the repository:**
+
+1. **Download full project:**  
+   [`Deep-Ensemble-Attack-Detection`](https://drive.google.com/file/d/1UoCuJOL7IKzSmy6OPq0xWVjoYo2OD_oI/view?usp=sharing).
    ```bash
-   git clone https://github.com/ns7523/Deep-Ensemble-Attack-Detection.git
    cd Deep-Ensemble-Attack-Detection
    ```
    
-2. **Run the project:**
+3. **Run the project:**
    ```bash
    python app.py
+   ```
 
 ## Usage
 1. **Data Collection:**
