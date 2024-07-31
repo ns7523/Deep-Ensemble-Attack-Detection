@@ -1,0 +1,48 @@
+1. Importing the packages
+2. Exploring the dataset 
+KDD
+3. Data processing
+	- pandas dataframe
+	- Keras processing
+	- Dropping unwanted column
+
+4. Visualization using seaborn & matplotlib
+5. Label Encoding using LabelEncoder
+6. Feature Selection 
+	- SelectPercentile using Mutual Info Classify
+7. Splitting the data to X and Y for Machine Learning
+8. Building the model
+Machine Learning with Kfold
+Logistic Regression
+SVM
+Naive Bayes
+Random Forest
+Stacking Classifier (RF + ET with LightGBM)
+Voting Classifier (RF + AB)
+-    Deep Learning 
+	    -  CNN
+-  LSTM
+- GRU
+- RNN
+9. Training and Building the model
+
+
+Flask Framework
+----------------
+
+ 
+10. Flask Framework with Sqlite for signup and signin
+11. Importing the packages
+12. User gives input as Feature Values 
+13. The given input is preprocessed for prediction
+14. Trained model is used for prediction
+15. Final outcome is displayed through frontend
+
+
+Extension
+----------
+
+In the base paper the author mentioned to use NSL KDD Dataset for analysis different Machine and Deep  Learning models RF, DT and LSTM which got 96, 96 and 98% of accuracy respectively,
+As an extension we applied an ensemble method  combining the predictions of multiple individual models to produce a more robust and accurate final prediction.
+However, we can further enhance the performance by exploring other ensemble techniques such as Voting Classifier RF + AB and Stacking classifier which got 100% of accuracy,
+As an extension we can build the front end using the flask framework for user testing and with user authentication.
