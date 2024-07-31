@@ -81,5 +81,4 @@ The dataset used for training and testing the machine learning models consists o
       <td><img width="397" alt="image" src="https://github.com/user-attachments/assets/33a6e13a-59e4-4956-85af-893b61d064a0"></td>
       <td><img width="397" alt="image" src="https://github.com/user-attachments/assets/5fe0c70c-320f-4816-91c1-868684694cab"></td>
    </tr>
-
-
+</table>
