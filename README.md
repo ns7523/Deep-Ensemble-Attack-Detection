@@ -1,84 +1,78 @@
-# Deep Ensemble-based Efficient Framework for Network Attack Detection
+<div align="center">
+  <br />
+  <img src="https://via.placeholder.com/120x120/0a0a0a/ffffff?text=Deep+Ens" alt="Deep Ensemble Icon" />
+  <br />
 
-## Drive Link
-Full project available on [`Deep-Ensemble-Attack-Detection`](https://drive.google.com/file/d/1UoCuJOL7IKzSmy6OPq0xWVjoYo2OD_oI/view?usp=sharing).
+  <h1 align="center">Deep Ensemble Attack Detection</h1>
 
-## Project Overview
-This project implements a Deep Ensemble-based Efficient Framework for detecting network attacks. By combining multiple machine learning models, this framework aims to improve the accuracy and robustness of network intrusion detection systems.
+  <p align="center">
+    <strong>Deep Ensemble-based Efficient Framework for Network Attack Detection.</strong>
+  </p>
 
-## Features
-- Real-time network attack detection using ensemble machine learning algorithms.
-- Robust feature extraction and preprocessing.
-- High accuracy and efficiency with deep learning models.
-- Scalable to handle large-scale network data.
+  <p align="center">
+    <img src="https://img.shields.io/badge/Architecture-Ensemble_Learning-purple?style=flat-square" alt="Architecture">
+    <img src="https://img.shields.io/badge/Environment-Jupyter-orange?style=flat-square&logo=jupyter" alt="Jupyter">
+    <img src="https://img.shields.io/badge/Python-3.8+-black?style=flat-square&logo=python" alt="Python">
+  </p>
+</div>
 
-## Technologies Used
-- `Python 3.6+`
-- `Scikit-learn`
-- `TensorFlow/Keras`
-- `Pandas`
-- `NumPy`
+<br />
 
-## System Design
-<table>
-   <tr>
-      <th>System Design</th>
-      <th>Activity Diagram</th>
-   </tr>
-   <tr align="center">
-      <td><img width="368" alt="image" src="https://github.com/user-attachments/assets/79aea383-5cab-4821-b436-df640d97f64e"></td>
-     <td><img width="397" alt="image" src="https://github.com/user-attachments/assets/885ec7d9-f061-488f-97e4-59be7a855a0a"></td>
-   </tr>
-</table>
+## Overview
 
----
+This research repository introduces a highly efficient Deep Ensemble machine learning framework engineered specifically for complex network attack detection. By aggregating predictive distributions across multiple deep learning topologies, the system significantly improves robustness against adversarial perturbations and zero-day intrusion signatures.
 
-## Installation
-#### Use Anaconda Navigator as base root
-To install and run this project, follow these steps:
+### Engineering & Research Significance
+Single-model intrusion detection systems suffer from high variance and overconfidence on out-of-distribution network traffic. This architecture leverages ensemble methodologies to calibrate uncertainty, yielding a more reliable security posture for enterprise-grade network monitoring.
 
-1. **Download full project:**  
-   [`Deep-Ensemble-Attack-Detection`](https://drive.google.com/file/d/1UoCuJOL7IKzSmy6OPq0xWVjoYo2OD_oI/view?usp=sharing).
-   ```bash
-   cd Deep-Ensemble-Attack-Detection
-   ```
-   
-3. **Run the project:**
-   ```bash
-   python app.py
-   ```
+<br />
 
-## Usage
-1. **Data Collection:**
-   - Predetermined and Trained  KDD Datasets.
-   - Tested and trained on 4-8 Lakhs of possibilites/datasets.
-   - The application will analyze the data and predict the attack possibilites.
+## Architecture Pipeline
 
-2. **Homepage:**
-   - Access at `LocalHost` to predict threat detection and attack status.
+```mermaid
+graph LR
+    A[Raw Network Telemetry] --> B(Feature Extractor)
+    B --> C{Deep Ensemble Core}
+    C --> D[Model 1: CNN]
+    C --> E[Model 2: LSTM]
+    C --> F[Model 3: MLP]
+    D --> G(Aggregation Layer)
+    E --> G
+    F --> G
+    G --> H[Threat Classification]
+```
 
----
+<br />
 
-## Dataset
-The dataset used for training and testing the machine learning models consists of network traffic data, including normal traffic and various network attack traffic.
+## Core Features
 
-## Results
-### Project Snapshots
-<table>
-   <tr>
-      <th>Homepage</th>
-      <th>Login</th>
-   </tr>
-   <tr align="center">
-      <td><img width="383" alt="image" src="https://github.com/user-attachments/assets/34c7fffa-6518-4311-8fd1-f4e00fbdbd79"></td>
-      <td><img width="396" alt="image" src="https://github.com/user-attachments/assets/c36ee4e7-8eb1-49ef-92a0-d125aad00be3"></td>
-   </tr>
-   <tr>
-      <th>Prediction</th>
-      <th>Result</th>
-   </tr>
-   <tr align="center">
-      <td><img width="397" alt="image" src="https://github.com/user-attachments/assets/33a6e13a-59e4-4956-85af-893b61d064a0"></td>
-      <td><img width="397" alt="image" src="https://github.com/user-attachments/assets/5fe0c70c-320f-4816-91c1-868684694cab"></td>
-   </tr>
-</table>
+- **Ensemble Aggregation**: Fuses spatial and temporal feature learning utilizing disparate neural architectures.
+- **Uncertainty Calibration**: Improves the system's ability to flag anomalous, previously unseen traffic types for manual review.
+- **High-Fidelity Feature Selection**: Minimizes inference latency without sacrificing detection accuracy.
+
+<br />
+
+## Quick Start
+
+### Prerequisites
+- Python 3.8+
+- Jupyter Notebook / JupyterLab environment.
+
+### Usage
+
+```bash
+# Clone the repository
+git clone https://github.com/ns7523/Deep-Ensemble-Attack-Detection.git
+cd Deep-Ensemble-Attack-Detection
+
+# Launch Jupyter environment
+jupyter notebook
+```
+Navigate to the primary `.ipynb` file to execute the training and evaluation cells.
+
+<br />
+
+<div align="center">
+  <br />
+  <sub>Security Architecture by <a href="https://github.com/ns7523">N S AKASH</a></sub>
+</div>
