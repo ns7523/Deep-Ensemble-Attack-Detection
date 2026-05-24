@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://img.icons8.com/color/96/000000/neural-network.png" alt="Neural Network Icon" width="80" />
+
 
 # Deep Ensemble-based Efficient Framework for Network Attack Detection
 
