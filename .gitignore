@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Virtual envs
+venv/
+.venv/
+env/
+ENV/
+
+# Notebook
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Flask / local runtime
+instance/
+*.log
+*.pid
+*.seed
+
+# Secrets / local config
+.env
+.env.*
+*.secret
+
+# ML / generated artifacts
+*.h5
+*.keras
+*.pkl
+*.joblib
+*.npy
+*.npz
+*.ckpt
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Common build outputs
+build/
+dist/
+site/
+htmlcov/
+coverage.xml
+.coverage
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/

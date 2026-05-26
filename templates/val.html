@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>ValidationForm</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- LINEARICONS -->
+		<link rel="stylesheet" href="static/assets1/fonts/linearicons/style.css">
+		
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="static/assets1/css/style.css">
+	</head>
+
+	<body>
+
+		<div class="wrapper">
+			<div class="inner">
+				<img src="static/assets1/images/image-1.png" alt="" class="image-1">
+       <p>
+                    <h2 style="color: rgb(26, 24, 24);">Validation Form</h2>
+                    <form action="{{ url_for('predict_lo') }}" method="POST">
+                      <h1 style="color: rgb(12, 12, 12);">Write the OTP here!</h1>
+                      <div style="text-align: center;">
+                        <input type="text" name="message" required="required" style="font-size: 12pt; width: 200px; background-color: #c4b7b7; color: #333;">
+                      </div>
+                      <br />
+                      <div class="p-t-15">
+                        <button class="btn btn--radius-2 btn--blue" type="submit">Submit</button>
+                      </div>
+                    </form>
+                    
+                </div>
+			
+            </div>
+            
+            <script src="static/assets1/js/jquery-3.3.1.min.js"></script>
+            <script src="static/assets1/js/main.js"></script>
+        </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+    </html>
