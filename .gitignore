@@ -57,3 +57,5 @@ coverage.xml
 .ruff_cache/
 .tox/
 .nox/
+*.csv
+kddcup/
