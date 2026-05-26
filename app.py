@@ -18,6 +18,7 @@ import smtplib
 from email.message import EmailMessage
 from datetime import datetime
 
+<<<<<<< HEAD
 from tensorflow.keras.models import Model, load_model
 #from keras.models import load_model
 
@@ -25,6 +26,8 @@ model1 = load_model('model_nsl.h5')
 
 model2 = load_model('model_kdd.h5')
 
+=======
+>>>>>>> c1c384aa53a7c54fa856ceeaaaf5bfa621237acb
 warnings.filterwarnings('ignore')
 
 
@@ -45,9 +48,12 @@ def about():
 def home():
 	return render_template('home.html')
 
+<<<<<<< HEAD
 @app.route('/home1')
 def home1():
 	return render_template('home1.html')
+=======
+>>>>>>> c1c384aa53a7c54fa856ceeaaaf5bfa621237acb
 
 @app.route('/logon')
 def logon():
@@ -59,6 +65,10 @@ def login():
 
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> c1c384aa53a7c54fa856ceeaaaf5bfa621237acb
 @app.route("/signup")
 def signup():
     global otp, username, name, email, number, password
@@ -117,6 +127,7 @@ def signin():
     else:
         return render_template("signin.html")
 
+<<<<<<< HEAD
 @app.route("/notebook1")
 def notebook1():
     return render_template("NSLKDD.html")
@@ -180,6 +191,45 @@ def predict1():
         output = 'There is an No Attack Detected, it is Normal!'
 
     return render_template('prediction.html', output=output)
+=======
+
+
+
+
+@app.route('/predict',methods=['POST'])
+def predict():
+    int_features= [float(x) for x in request.form.values()]
+    print(int_features,len(int_features))
+    final4=[np.array(int_features)]
+    #model = joblib.load('models/nsl_binary.sav')
+    model1 = joblib.load('model.sav')
+    #predict = model.predict(final4)
+    predict1 = model1.predict(final4)
+    if predict1==4:
+         output='There is No Attack Detected and Its Normal!'
+        
+    elif predict1==1:
+        output='Attack is Detected and its Probe Attack!'
+       
+    elif predict1==2:
+        output='Attack is Detected and its R2L Attack!'
+ 
+    elif predict1==3:
+        output='Attack is Detected and its U2R Attack!'
+
+    elif predict1==0:
+        output='Attack is Detected and its DOS Attack!'
+
+    
+    return render_template('prediction.html', output=output)
+
+@app.route("/notebook")
+def notebook1():
+    return render_template("Notebook.html")
+
+
+
+>>>>>>> c1c384aa53a7c54fa856ceeaaaf5bfa621237acb
 
 
 if __name__ == "__main__":
