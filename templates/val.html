@@ -20,6 +20,13 @@
        <p>
                     <h2 style="color: rgb(26, 24, 24);">Validation Form</h2>
                     <form action="{{ url_for('predict_lo') }}" method="POST">
+                      <input type="hidden" name="token" value="{{ token }}">
+                      {% if error %}
+                      <p style="color: #b00020; font-size: 1rem; margin-bottom: 12px;">{{ error }}</p>
+                      {% endif %}
+                      {% if email %}
+                      <p style="font-size: 1rem; margin-bottom: 12px;">OTP sent to {{ email }}.</p>
+                      {% endif %}
                       <h1 style="color: rgb(12, 12, 12);">Write the OTP here!</h1>
                       <div style="text-align: center;">
                         <input type="text" name="message" required="required" style="font-size: 12pt; width: 200px; background-color: #c4b7b7; color: #333;">

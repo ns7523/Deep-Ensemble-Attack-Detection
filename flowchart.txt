@@ -1,107 +1,36 @@
-<<<<<<< HEAD
-1. Importing the packages
-2. Exploring the dataset 
-	- KDDCUP99
-	- NSL KDD
-	- UNSW-NB15
-	- BoT-IoT
+1. Import packages
+2. Explore datasets
+   - KDD
+   - NSL-KDD
+   - UNSW-NB15
+   - Bot-IoT
 3. Data processing
-	- pandas dataframe
-	- Keras Dataframe
-	- Dropping unwanted column
+   - pandas dataframe
+   - Keras preprocessing
+   - Drop unwanted columns
+4. Visualize with seaborn and matplotlib
+5. Encode labels with LabelEncoder
+6. Select features
+   - SelectPercentile using mutual information
+7. Split data for training and testing
+8. Build models
+   - DNN
+   - LSTM
+   - CNN
+   - CNN + LSTM
+   - Machine learning ensembles
+9. Train and evaluate models
 
-4. Visualization using seaborn & matplotlib
-5. Label Encoding using LabelEncoder
-6. Feature Selection 
-7. Splitting the data to train and test for Deep LEarning and Taking X and Y for Machine Learning
-8. Building the model
+Flask framework
+---------------
 
-	- DNN with Bagging Classifier
-	- LSTM
-	- CNN 
-	- CNN + LSTM
-
-9. Training and Building the model
-
-
-Flask Framework
-----------------
-
- 
-10. Flask Framework with Sqlite for signup and signin
-11. Importing the packages
-12. User gives input as Feature Values 
-13. The given input is preprocessed for prediction
-14. Trained model is used for prediction
-15. Final outcome is displayed through frontend
-
-Dataset: 
-
-NSL - KDD : 
-https://www.kaggle.com/datasets/kaggleprollc/nsl-kdd99-dataset
-
-KDD-CUP : 
-https://www.kaggle.com/datasets/galaxyh/kdd-cup-1999-data
-
-UNSW-15-NB:
-https://www.kaggle.com/datasets/sweety18/unsw-nb15-training
-
-Bot-IoT : https://www.kaggle.com/datasets/vigneshvenkateswaran/bot-iot-5-data
+10. Use Flask with SQLite for signup and signin
+11. Collect feature values from user
+12. Preprocess input for prediction
+13. Run trained model
+14. Display final outcome in frontend
 
 Extension
-----------
+---------
 
-In the base paper the author mentioned to use different Dataset for analysis with Deep learning models like DNN, LSTM got 98% of accuracy,
-As an extension we applied an ensemble method  combining the predictions of multiple individual models to produce a more robust and accurate final prediction.
-However, we can further enhance the performance by exploring other ensemble techniques such as CNN and CNN + LSTM got 99% of accuracy, for KDDCup, NSL Dataset,
-As an extension we can build the front end using the flask framework for user testing and with user authentication.
-=======
-1. Importing the packages
-2. Exploring the dataset 
-KDD
-3. Data processing
-	- pandas dataframe
-	- Keras processing
-	- Dropping unwanted column
-
-4. Visualization using seaborn & matplotlib
-5. Label Encoding using LabelEncoder
-6. Feature Selection 
-	- SelectPercentile using Mutual Info Classify
-7. Splitting the data to X and Y for Machine Learning
-8. Building the model
-Machine Learning with Kfold
-Logistic Regression
-SVM
-Naive Bayes
-Random Forest
-Stacking Classifier (RF + ET with LightGBM)
-Voting Classifier (RF + AB)
--    Deep Learning 
-	    -  CNN
--  LSTM
-- GRU
-- RNN
-9. Training and Building the model
-
-
-Flask Framework
-----------------
-
- 
-10. Flask Framework with Sqlite for signup and signin
-11. Importing the packages
-12. User gives input as Feature Values 
-13. The given input is preprocessed for prediction
-14. Trained model is used for prediction
-15. Final outcome is displayed through frontend
-
-
-Extension
-----------
-
-In the base paper the author mentioned to use NSL KDD Dataset for analysis different Machine and Deep  Learning models RF, DT and LSTM which got 96, 96 and 98% of accuracy respectively,
-As an extension we applied an ensemble method  combining the predictions of multiple individual models to produce a more robust and accurate final prediction.
-However, we can further enhance the performance by exploring other ensemble techniques such as Voting Classifier RF + AB and Stacking classifier which got 100% of accuracy,
-As an extension we can build the front end using the flask framework for user testing and with user authentication.
->>>>>>> c1c384aa53a7c54fa856ceeaaaf5bfa621237acb
+The base project uses deep learning and ensemble methods for intrusion detection. The Flask app adds a user-facing interface for testing and authentication.

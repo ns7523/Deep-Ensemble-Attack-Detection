@@ -17,8 +17,14 @@
 		<div class="wrapper">
 			<div class="inner">
 				<img src="static/assets1/images/image-1.png" alt="" class="image-1">
-				<form action="/signin" method="GET">
+				<form action="/signin" method="POST">
 					<h3>Add Account?</h3>
+					{% if error %}
+					<p style="color: #b00020; font-size: 1rem; margin-bottom: 12px;">{{ error }}</p>
+					{% endif %}
+					{% if message %}
+					<p style="color: #0a7a2f; font-size: 1rem; margin-bottom: 12px;">{{ message }}</p>
+					{% endif %}
 					<div class="form-holder">
 						<span class="lnr lnr-user"></span>
 						<input type="text" name="user" class="form-control" placeholder="Username" required>

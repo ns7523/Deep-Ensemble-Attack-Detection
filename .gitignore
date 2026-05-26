@@ -29,6 +29,7 @@ instance/
 # Secrets / local config
 .env
 .env.*
+!.env.example
 *.secret
 
 # ML / generated artifacts
